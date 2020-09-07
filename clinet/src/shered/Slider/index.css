@@ -1,0 +1,114 @@
+.slider {
+  background-color: white;
+}
+
+.slider span {
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+}
+.close_icon {
+  bottom: 10px;
+  position: relative;
+  color: teal;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+.right_ctrl {
+  position: absolute;
+  padding: 10px;
+  top: 175px;
+  left: 87%;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  background-color: rgba(189, 228, 228, 0.5);
+}
+.left_ctrl {
+  position: absolute;
+  padding: 10px;
+  top: 175px;
+  right: 87%;
+  z-index: 1;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  background-color: rgba(189, 228, 228, 0.5);
+}
+
+.silde_footer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 5px 0;
+}
+.money_icon {
+  margin: 0 5px;
+
+  font-size: 22px;
+}
+
+.silde_footer span {
+  display: grid;
+
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  grid-template-columns: 0.3fr 1fr;
+}
+.silde_footer span :nth-child(2) {
+  color: rgb(134, 161, 161);
+}
+.silde_num {
+  grid-column: 1/-1;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.silde_num p {
+  color: teal;
+  padding: 0 5px;
+}
+.right_ctrl {
+}
+.item_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+
+  justify-content: center;
+}
+.slider img {
+  position: relative;
+}
+.item_info .comment {
+  display: grid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  grid-template-columns: 40px max-content;
+}
+.comment p {
+  background-color: rgb(248, 252, 252);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.item_info span {
+  text-align: left;
+  cursor: pointer;
+  padding: 0 30px;
+}
+.slid_icon,
+.icon_off {
+  color: teal;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.icon_off {
+  color: rgb(157, 201, 201) !important;
+}
